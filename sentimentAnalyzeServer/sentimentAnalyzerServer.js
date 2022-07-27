@@ -18,9 +18,8 @@ variables that you set up in the .env file*/
  const api_url = process.env.API_URL;
 
 function getNLUInstance() {
-    /*Type the code to create the NLU instance and return it.
-    You can refer to the image in the instructions document
-    to do the same.*/
+    /*This method creates an instance for the Watson
+    Natural Languague Understanding service and returns it.*/
     const NaturalLanguageUnderstandingV1 = require('ibm-watson/natural-language-understanding/v1');
     const { IamAuthenticator } = require('ibm-watson/auth');
 
